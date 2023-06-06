@@ -20,6 +20,7 @@
 
 	<!--script type="text/javascript" src="a.js"></script-->
 	<script type="text/javascript">
+	document.addEventListener('contextmenu', event => event.preventDefault());
 	function hideClass(name) {
        var myClasses = document.querySelectorAll(name),
       i = 0,
