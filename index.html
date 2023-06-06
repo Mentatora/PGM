@@ -601,23 +601,20 @@
     }
 
     // Update the high score.
-    if ( 1032 < this.distanceMeter.getActualDistance(this.distanceRan)) {
+    if ( 806 < this.distanceMeter.getActualDistance(this.distanceRan)) {
         document.getElementById("result3").innerHTML = "X5v9"  ;
     }
-    else if (1000 < this.distanceMeter.getActualDistance(this.distanceRan) & 1032 > this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "Very very very very very close" ;
+    else if (800 < this.distanceMeter.getActualDistance(this.distanceRan) & 806 > this.distanceMeter.getActualDistance(this.distanceRan)) {
+        document.getElementById("result3").innerHTML = "You can't be that close (score to have = 807)" ;
     }
     else if (0 < this.distanceMeter.getActualDistance(this.distanceRan) & 200 > this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "Need to be better" ;
+        document.getElementById("result3").innerHTML = "You need to be better than this" ;
     }
-    else if (200 < this.distanceMeter.getActualDistance(this.distanceRan) & 600 > this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "On the goo way" ;
+    else if (200 < this.distanceMeter.getActualDistance(this.distanceRan) & 500 > this.distanceMeter.getActualDistance(this.distanceRan)) {
+        document.getElementById("result3").innerHTML = "Good, but not good enought.." ;
     }
-    else if (600 < this.distanceMeter.getActualDistance(this.distanceRan) & 800 > this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "almost" ;
-    }
-    else if (800 < this.distanceMeter.getActualDistance(this.distanceRan) & 1000 > this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "Very close !" ;
+    else if (500 < this.distanceMeter.getActualDistance(this.distanceRan) & 800 > this.distanceMeter.getActualDistance(this.distanceRan)) {
+        document.getElementById("result3").innerHTML = "You are pretty close !" ;
     }
     if (this.distanceRan > this.highestScore) {
     this.highestScore = Math.ceil(this.distanceRan);
