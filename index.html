@@ -2,7 +2,8 @@
 
 <head>
 <title>T-Rex Game</title>
-azazekjaz;
+	Hello there... I find you quiet pretentious for coming here and dare challenge me ! </br>
+	Come on ! Let's play and may the best (me) win... ;
 <meta name="description" content="Ripped T-Rex/Dino game of Chromium">
 <meta property="og:title" content="Play the hidden T-Rex Dinosaur game of Chromium .">
 <meta property="og:type" content="article">
@@ -604,19 +605,16 @@ azazekjaz;
 
     // Update the high score.
     if ( 806 < this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "X5v9"  ;
-    }
-    else if (800 < this.distanceMeter.getActualDistance(this.distanceRan) & 806 > this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "You can't be that close (score to have = 807)" ;
+        document.getElementById("result3").innerHTML = "Fair enought... you're that bad take the answer 2 : X5v9"  ;
     }
     else if (0 < this.distanceMeter.getActualDistance(this.distanceRan) & 200 > this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "You need to be better than this" ;
+        document.getElementById("result3").innerHTML = "It seems I have nothing to worry about..." ;
     }
     else if (200 < this.distanceMeter.getActualDistance(this.distanceRan) & 500 > this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "Good, but not good enought.." ;
+        document.getElementById("result3").innerHTML = "Oh yes !!! You're good... but not good enought :)" ;
     }
-    else if (500 < this.distanceMeter.getActualDistance(this.distanceRan) & 800 > this.distanceMeter.getActualDistance(this.distanceRan)) {
-        document.getElementById("result3").innerHTML = "You are pretty close !" ;
+    else if (500 < this.distanceMeter.getActualDistance(this.distanceRan) & 806 > this.distanceMeter.getActualDistance(this.distanceRan)) {
+        document.getElementById("result3").innerHTML = "Oh no no no, do not go further please... I have children and a dog pleeeease" ;
     }
     if (this.distanceRan > this.highestScore) {
     this.highestScore = Math.ceil(this.distanceRan);
